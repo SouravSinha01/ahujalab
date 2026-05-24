@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Instrument+Serif:ital,wght@0,400;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Instrument+Serif:ital,wght@0,400;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root, [data-theme="light"] {
   --brand-bg: #FAF9F5;
