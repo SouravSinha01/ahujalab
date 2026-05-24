@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
             © 2026 AHUJA LAB — IIIT DELHI
           </p>
           <p className="text-xs font-mono text-brand-text-muted opacity-40 uppercase tracking-[0.2em]">
-          </> by Sourav Sinha
+          {'</>'} by Sourav Sinha
           </p>
         </div>
       </div>
