@@ -51,10 +51,10 @@ export const Footer: React.FC = () => {
 
         <div className="mt-24 pt-8 border-t border-brand-border flex flex-col md:flex-row justify-between items-center gap-4 transition-colors duration-500">
           <p className="text-xs font-mono text-brand-text-muted opacity-40 uppercase tracking-[0.2em]">
-            © 2026 AHUJA LABORATORY — IIIT DELHI
+            © 2026 AHUJA LAB — IIIT DELHI
           </p>
           <p className="text-xs font-mono text-brand-text-muted opacity-40 uppercase tracking-[0.2em]">
-            BUILT FOR SCIENTIFIC IMPACT
+          </> by Sourav Sinha
           </p>
         </div>
       </div>
