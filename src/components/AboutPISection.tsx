@@ -142,9 +142,7 @@ export const AboutPISection: React.FC = () => {
                 alt="Dr. Gaurav Ahuja"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-4 left-4 font-mono text-xs text-brand-teal bg-brand-dark/80 px-2.5 py-1 border border-brand-teal/40 font-bold tracking-widest">
-                PRINCIPAL INVESTIGATOR
-              </div>
+              
             </div>
 
             <div className="space-y-4 font-mono text-xs md:text-sm border-t border-brand-border/60 pt-6">
