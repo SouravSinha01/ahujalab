@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Instrument+Serif:ital,wght@0,400;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root, [data-theme="light"] {
+  --brand-bg: #FAF9F5;
+  --brand-card: #FFFFFF;
+  --brand-text: #050505;
+  --brand-text-muted: rgba(5, 5, 5, 0.6);
+  --brand-border: rgba(5, 5, 5, 0.12);
+  --brand-grid: rgba(5, 5, 5, 0.08);
+  --brand-teal: #009E8C;
+  --brand-cobalt: #1F3F96;
+  --brand-btn-text: #FFFFFF;
+  --brand-nav-bg: rgba(250, 249, 245, 0.92);
+  --brand-nav-border: rgba(5, 5, 5, 0.08);
+  --video-opacity: 0.15;
+}
+
+[data-theme="dark"] {
+  --brand-bg: #070A0E;
+  --brand-card: #0C0E12;
+  --brand-text: #FDFCF8;
+  --brand-text-muted: rgba(253, 252, 248, 0.6);
+  --brand-border: rgba(253, 252, 248, 0.12);
+  --brand-grid: rgba(253, 252, 248, 0.1);
+  --brand-teal: #00E5CC;
+  --brand-cobalt: #1A3FBF;
+  --brand-btn-text: #070A0E;
+  --brand-nav-bg: rgba(7, 10, 14, 0.92);
+  --brand-nav-border: rgba(253, 252, 248, 0.1);
+  --video-opacity: 0.50;
+}
+
+@theme {
+  --font-syne: "Syne", sans-serif;
+  --font-instrument: "Instrument Serif", serif;
+  --font-mono: "DM Mono", monospace;
+
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-cobalt: var(--brand-cobalt);
+  --color-brand-dark: var(--brand-bg);
+  --color-brand-card: var(--brand-card);
+  --color-brand-text: var(--brand-text);
+  --color-brand-text-muted: var(--brand-text-muted);
+  --color-brand-border: var(--brand-border);
+  --color-brand-grid: var(--brand-grid);
+  --color-brand-btn-text: var(--brand-btn-text);
+  --color-brand-nav-bg: var(--brand-nav-bg);
+  --color-brand-nav-border: var(--brand-nav-border);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-brand-text font-syne antialiased selection:bg-brand-teal selection:text-brand-dark transition-colors duration-500;
+  }
+}
+
+@layer utilities {
+  .noise-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+}

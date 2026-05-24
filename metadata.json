@@ -1,0 +1,6 @@
+{
+  "name": "Chemical Biology Lab — IIIT Delhi",
+  "description": "A high-end research lab hero section with HLS video backgrounds and liquid glass UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
