@@ -1,5 +1,61 @@
-import React from 'react';
-import { Github, Mail, MapPin, Twitter } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Github, Mail, MapPin, Twitter, X } from 'lucide-react';
+
+function MapPinButton() {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  const mapsUrl = 'https://www.google.com/maps?q=Indraprastha+Institute+of+Information+Technology+Delhi&z=15&output=embed';
+
+  return (
+      <>
+      <button
+        onClick={() => setOpen(true)}
+        aria-label="Open IIIT-Delhi on Google Maps"
+        className="p-0.5 text-brand-teal hover:text-brand-cobalt focus:outline-none"
+      >
+        <MapPin className="w-5 h-5 text-brand-teal shrink-0 mt-1 motion-safe:animate-pulse" />
+      </button>
+
+      {open && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setOpen(false)}
+            aria-hidden
+          />
+
+          <div className="relative bg-brand-card w-[90%] md:w-[70%] lg:w-[60%] h-[60%] rounded-md overflow-hidden shadow-2xl">
+            <div className="flex items-center justify-between p-2 border-b border-brand-border">
+              <div className="px-2 text-sm font-mono text-brand-text-muted">IIIT-Delhi — Map</div>
+              <button
+                onClick={() => setOpen(false)}
+                aria-label="Close map"
+                className="p-2 text-brand-text-muted hover:text-brand-text"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <iframe
+              title="IIIT-Delhi map"
+              src={mapsUrl}
+              className="w-full h-full border-0"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
 
 export const Footer: React.FC = () => {
   return (
@@ -27,8 +83,8 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-mono text-xs md:text-sm uppercase text-brand-teal tracking-widest font-bold">Navigation</h4>
-            <ul className="space-y-3 font-mono text-xs md:text-sm uppercase tracking-wider text-brand-text-muted font-bold">
+            <h4 className="font-mono text-xs  uppercase text-brand-teal tracking-widest font-bold">Navigation</h4>
+            <ul className="space-y-3 font-mono text-[11px] uppercase tracking-wider text-brand-text-muted font-bold">
               <li><a href="#hero" className="hover:text-brand-teal transition-colors">Home</a></li>
               <li><a href="#science" className="hover:text-brand-teal transition-colors">Science</a></li>
               <li><a href="#team" className="hover:text-brand-teal transition-colors">The Team</a></li>
@@ -38,23 +94,26 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="space-y-6">
-            <h4 className="font-mono text-xs md:text-sm uppercase text-brand-teal tracking-widest font-bold">Location</h4>
-            <div className="flex gap-3 items-start">
-              <MapPin className="w-5 h-5 text-brand-teal shrink-0" />
-              <p className="text-brand-text-muted text-xs sm:text-sm leading-relaxed font-mono">
-                Indraprastha Institute of Information Technology (IIIT-Delhi)<br />
-                Okhla Phase III, New Delhi, India 110020
-              </p>
+            <h4 className="font-mono text-xs  uppercase text-brand-teal tracking-widest font-bold">Location</h4>
+            <div className="flex gap-4 items-center">
+              <img src="/iiitd.jpg" alt="IIIT-Delhi campus" className="w-20 h-auto rounded-sm object-cover shrink-0" />
+              <div className="flex items-start gap-3">
+                <MapPinButton />
+                <p className="text-brand-text-muted text-xs leading-relaxed font-mono">
+                  Indraprastha Institute of Information Technology (IIIT-Delhi)<br />
+                  Okhla Phase III, New Delhi, India 110020
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="mt-24 pt-8 border-t border-brand-border flex flex-col md:flex-row justify-between items-center gap-4 transition-colors duration-500">
-          <p className="text-xs font-mono text-brand-text-muted opacity-40 uppercase tracking-[0.2em]">
-            © 2026 AHUJA LAB — IIIT DELHI
+          <p className="text-[10px] font-mono text-brand-text-muted opacity-40 uppercase tracking-[0.2em]">
+            © 2026 AHUJA LABORATORY — IIIT DELHI
           </p>
-          <p className="text-xs font-mono text-brand-text-muted opacity-40 uppercase tracking-[0.2em]">
-          {'</>'} by Sourav Sinha
+          <p className="text-[10px] font-mono text-brand-text-muted opacity-40 uppercase tracking-[0.2em]">
+            {'</>'} by Sourav Sinha
           </p>
         </div>
       </div>
