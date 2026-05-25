@@ -6,7 +6,7 @@
   --brand-text: #050505;
   --brand-text-muted: rgba(5, 5, 5, 0.6);
   --brand-border: rgba(5, 5, 5, 0.12);
-  --brand-grid: rgba(5, 5, 5, 0.08);
+  --brand-grid: rgba(5, 5, 5, 0.035);
   --brand-teal: #009E8C;
   --brand-cobalt: #1F3F96;
   --brand-btn-text: #FFFFFF;
@@ -21,7 +21,7 @@
   --brand-text: #FDFCF8;
   --brand-text-muted: rgba(253, 252, 248, 0.6);
   --brand-border: rgba(253, 252, 248, 0.12);
-  --brand-grid: rgba(253, 252, 248, 0.1);
+  --brand-grid: rgba(253, 252, 248, 0.045);
   --brand-teal: #00E5CC;
   --brand-cobalt: #1A3FBF;
   --brand-btn-text: #070A0E;
