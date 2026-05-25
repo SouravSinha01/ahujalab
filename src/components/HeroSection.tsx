@@ -28,10 +28,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreResearch, onM
       </motion.div>
 
       {/* Grid Lines - Desktop Only */}
-      <motion.div style={{ y: bgY }} className="hidden lg:block absolute inset-0 z-10 pointer-events-none">
-        <div className="h-full w-[1px] bg-brand-grid absolute left-[25%] transition-colors duration-500" />
-        <div className="h-full w-[1px] bg-brand-grid absolute left-[50%] transition-colors duration-500" />
-        <div className="h-full w-[1px] bg-brand-grid absolute left-[75%] transition-colors duration-500" />
+      {/* Grid Lines - Desktop Only */}
+      <motion.div
+        style={{ y: bgY }}
+        className="hidden lg:block absolute inset-0 z-10 pointer-events-none opacity-40"
+      >
+        {[25, 50, 75].map((pos) => (
+          <div
+            key={pos}
+            className="absolute top-0 bottom-0 w-px"
+            style={{
+              left: `${pos}%`,
+              background:
+                'linear-gradient(to bottom, transparent, var(--brand-grid), transparent)',
+            }}
+          />
+        ))}
       </motion.div>
 
       {/* Central Glow */}
