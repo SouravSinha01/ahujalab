@@ -7,7 +7,7 @@ const GRADUATES = [
   
   {
     name: "Saveena Solanki",
-    role: "Graduate Student",
+    role: "PhD Scholar",
     focus: "Exploring the multivalent-multi-targeting potential of cellular metabolites",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
     links: {
@@ -19,7 +19,7 @@ const GRADUATES = [
   },
   {
     name: "Subhadeep Duari",
-    role: "Graduate Student",
+    role: "PhD Scholar",
     focus: "Developing medical and biological computer vision models using Deep Learning",
     image: "subhodeepD.jpg",
     links: {
@@ -31,7 +31,7 @@ const GRADUATES = [
   },
   {
     name: "Shiva Satija",
-    role: "Graduate Student",
+    role: "PhD Scholar",
     focus: "Genotoxic research, high-throughput Nanopore sequencing, and generative AI",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
     links: {
@@ -43,7 +43,7 @@ const GRADUATES = [
   },
   {
     name: "Sonam Chauhan",
-    role: "Graduate Student",
+    role: "PhD Scholar",
     focus: "Systematic exploration of the \"Dark Matter\" of the Chemical World",
     image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=400",
     links: {
@@ -55,7 +55,7 @@ const GRADUATES = [
   },
   {
     name: "Suvendu Kumar",
-    role: "Graduate Student",
+    role: "PhD Scholar",
     focus: "Designing novel computational methods for chemical compound representation",
     image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
     links: {
@@ -67,7 +67,7 @@ const GRADUATES = [
   },
   {
     name: "Arushi Sharma",
-    role: "Graduate Student",
+    role: "PhD Scholar",
     focus: "Powering biomedical discovery using knowledge graphs and Large Language Models",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400",
     links: {
@@ -79,7 +79,7 @@ const GRADUATES = [
   },
   {
     name: "Raidhani Shome",
-    role: "Graduate Student",
+    role: "PhD Scholar",
     focus: "Building clinical-grade genomics platforms and advanced analytical methods",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
     links: {
@@ -91,7 +91,7 @@ const GRADUATES = [
   },
   {
     name: "Sourav Sinha",
-    role: "Graduate Student",
+    role: "PhD Student",
     focus: "AI-driven discovery of novel Calorie Restriction Mimetics",
     image: "souravs.png",
     links: {
@@ -205,7 +205,7 @@ export const TeamSection: React.FC = () => {
                       className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700 hover:scale-105"
                     />
                     <div className="absolute bottom-2 left-2 font-mono text-[10px] text-brand-teal bg-brand-dark/80 px-2 py-0.5 border border-brand-teal/30 font-bold tracking-widest uppercase">
-                      GRADUATE
+                      PhD
                     </div>
                   </div>
 
@@ -285,8 +285,8 @@ export const TeamSection: React.FC = () => {
             <div className="font-mono text-xs md:text-sm text-brand-teal uppercase tracking-widest font-bold mb-4">[ ALUMNI ]</div>
           </ScrollReveal>
           <ScrollReveal variant="fadeIn" delay={0.2}>
-            <h2 className="font-syne font-bold text-3xl sm:text-4xl leading-[0.95] tracking-tight uppercase text-brand-text mb-4">Passed Out Members<span className="text-brand-teal">.</span></h2>
-            <p className="font-instrument text-base text-brand-text-muted leading-relaxed font-light italic">Former members who contributed to the lab ❤️.</p>
+            <h2 className="font-syne font-bold text-3xl sm:text-4xl leading-[0.95] tracking-tight uppercase text-brand-text mb-4">Former Members<span className="text-brand-teal">.</span></h2>
+            <p className="font-instrument text-base text-brand-text-muted leading-relaxed font-light italic">Once part of the lab, always part of the journey ❤️.</p>
           </ScrollReveal>
         </div>
 
