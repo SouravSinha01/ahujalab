@@ -81,7 +81,7 @@ const GRADUATES = [
     name: "Raidhani Shome",
     role: "PhD Scholar",
     focus: "Building clinical-grade genomics platforms and advanced analytical methods",
-    image: "raidhanis.png",
+    image: "raidhanis.jpeg",
     links: {
       email: "mailto:raidhanis@iiitd.ac.in",
       github: "https://github.com/raidhani-shome",
@@ -107,10 +107,10 @@ const GRADUATES = [
     focus: "AI-driven discovery of novel Calorie Restriction Mimetics",
     image: "adnanr.png",
     links: {
-      email: "mailto:souravs@iiitd.ac.in",
-      github: "https://github.com/souravs-iiitd",
-      linkedin: "https://linkedin.com/in/sourav-sinha-ai",
-      scholar: "https://scholar.google.com/citations?user=test_sourav"
+      email: "mailto:adnanraza3435@gmail.com",
+      github: "https://github.com/woosflex",
+      linkedin: "https://linkedin.com/in/woosflex",
+      scholar: "https://scholar.google.com/citations?user=fuD1FzcAAAAJ&hl=en"
     }
   },
 
@@ -135,7 +135,7 @@ const ALUMNI = [
     focus: "Former Graduate Student",
     image: "vishakaG.png",
     links: {
-      email: "mailto:vishaka@example.com",
+      email: "mailto:vishakhag@iiitd.ac.in",
       linkedin: "",
       github: "",
       scholar: ""
@@ -147,10 +147,10 @@ const ALUMNI = [
     focus: "Former Graduate Student",
     image: "/sanjaym.png",
     links: {
-      email: "mailto:sanjay@example.com",
-      linkedin: "",
-      github: "",
-      scholar: ""
+      email: "mailto:kumeres741@gmail.com",
+      linkedin: "https://www.linkedin.com/in/sanjay-741mohanty/",
+      github: "https://github.com/SanjayISHIGAMI",
+      scholar: "https://scholar.google.com/citations?user=FzzOfpIAAAAJ&hl=en"
     }
   },
   {
