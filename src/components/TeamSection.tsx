@@ -23,10 +23,10 @@ const GRADUATES = [
     focus: "Developing medical and biological computer vision models using Deep Learning",
     image: "subhodeepD.jpg",
     links: {
-      email: "mailto:subhadeepd@iiitd.ac.in",
-      github: "https://github.com/subhadeep-duari",
-      linkedin: "https://linkedin.com/in/subhadeep-duari-cs",
-      scholar: "https://scholar.google.com/citations?user=test_subhadeep"
+      email: "mailto:Subhadeepd@iiitd.ac.in",
+      github: "https://github.com/SubhadeepDuari",
+      linkedin: "https://www.linkedin.com/in/subhadeep-duari-50a570122/",
+      scholar: "https://scholar.google.com/citations?user=U4WJ-OoAAAAJ&hl=en"
     }
   },
   {
@@ -35,10 +35,10 @@ const GRADUATES = [
     focus: "Genotoxic research, high-throughput Nanopore sequencing, and generative AI",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
     links: {
-      email: "mailto:shivas@iiitd.ac.in",
+      email: "mailto:shivasa@iiitd.ac.in",
       github: "https://github.com/shiva-satija",
-      linkedin: "https://linkedin.com/in/shiva-satija-lab",
-      scholar: "https://scholar.google.com/citations?user=test_shiva"
+      linkedin: "https://www.linkedin.com/in/shivasatija/",
+      scholar: "https://scholar.google.com/citations?user=K-t5_7IAAAAJ&hl=en"
     }
   },
   {
@@ -81,7 +81,7 @@ const GRADUATES = [
     name: "Raidhani Shome",
     role: "PhD Scholar",
     focus: "Building clinical-grade genomics platforms and advanced analytical methods",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+    image: "raidhanis.png",
     links: {
       email: "mailto:raidhanis@iiitd.ac.in",
       github: "https://github.com/raidhani-shome",
@@ -100,7 +100,20 @@ const GRADUATES = [
       linkedin: "https://linkedin.com/in/sourav-sinha-ai",
       scholar: "https://scholar.google.com/citations?user=test_sourav"
     }
-  }
+  },
+  {
+    name: "Adnan Raza",
+    role: "PhD Student",
+    focus: "AI-driven discovery of novel Calorie Restriction Mimetics",
+    image: "adnanr.png",
+    links: {
+      email: "mailto:souravs@iiitd.ac.in",
+      github: "https://github.com/souravs-iiitd",
+      linkedin: "https://linkedin.com/in/sourav-sinha-ai",
+      scholar: "https://scholar.google.com/citations?user=test_sourav"
+    }
+  },
+
 ];
 
 const ALUMNI = [

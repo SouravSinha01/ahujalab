@@ -127,9 +127,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreResearch, onM
             transition={{ ...premiumTransition, delay: 0.6 }}
             className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs text-brand-text-muted/60 uppercase tracking-widest transition-colors duration-500"
           >
-            <span>50+ Publications</span>
-            <span className="text-brand-border">•</span>
-            <span>10 Researchers</span>
+            
             <span className="text-brand-border">•</span>
             <span>Est. 2019</span>
             <span className="text-brand-border">•</span>
