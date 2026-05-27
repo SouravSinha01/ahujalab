@@ -130,10 +130,10 @@ const ALUMNI = [
     }
   },
   {
-    name: "Vishaka Gautam",
+    name: "Vishakha Gautam",
     role: "Alumnus",
     focus: "Former Graduate Student",
-    image: "vishakag.png",
+    image: "vishakhag.png",
     links: {
       email: "mailto:vishakhag@iiitd.ac.in",
       linkedin: "https://in.linkedin.com/in/vishakha-gautam-663b63114",
