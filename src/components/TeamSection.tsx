@@ -9,7 +9,7 @@ const GRADUATES = [
     name: "Saveena Solanki",
     role: "PhD Scholar",
     focus: "Exploring the multivalent-multi-targeting potential of cellular metabolites",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
+    image: "saveenas.png",
     links: {
       email: "mailto:saveenas@iiitd.ac.in",
       github: "https://github.com/saveena-solanki",
@@ -33,7 +33,7 @@ const GRADUATES = [
     name: "Shiva Satija",
     role: "PhD Scholar",
     focus: "Genotoxic research, high-throughput Nanopore sequencing, and generative AI",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+    image: "shivasa.png",
     links: {
       email: "mailto:shivasa@iiitd.ac.in",
       github: "https://github.com/shiva-satija",
@@ -104,7 +104,7 @@ const GRADUATES = [
   {
     name: "Adnan Raza",
     role: "PhD Student",
-    focus: "AI-driven discovery of novel Calorie Restriction Mimetics",
+    focus: "Architecting low-level systems frameworks and efficient ML models for bare-metal performance.",
     image: "adnanr.png",
     links: {
       email: "mailto:adnanraza3435@gmail.com",
@@ -133,12 +133,12 @@ const ALUMNI = [
     name: "Vishaka Gautam",
     role: "Alumnus",
     focus: "Former Graduate Student",
-    image: "vishakaG.png",
+    image: "vishakag.png",
     links: {
       email: "mailto:vishakhag@iiitd.ac.in",
-      linkedin: "",
-      github: "",
-      scholar: ""
+      linkedin: "https://in.linkedin.com/in/vishakha-gautam-663b63114",
+      github: "https://github.com/vishakha-gautam11041997",
+      scholar: "https://scholar.google.com/citations?user=RnQzRdoAAAAJ&hl=en"
     }
   },
   {
