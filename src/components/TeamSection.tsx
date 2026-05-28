@@ -12,9 +12,9 @@ const GRADUATES = [
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
     links: {
       email: "mailto:saveenas@iiitd.ac.in",
-      github: "https://github.com/saveena-solanki",
-      linkedin: "https://linkedin.com/in/saveena-solanki-chembio",
-      scholar: "https://scholar.google.com/citations?user=test_saveena"
+      github: "https://github.com/SaveenaSolanki",
+      linkedin: "https://www.linkedin.com/in/saveenasolanki/",
+      scholar: "https://scholar.google.com/citations?hl=en&tzom=-330&user=5sL2XRYAAAAJ#"
     }
   },
   {
