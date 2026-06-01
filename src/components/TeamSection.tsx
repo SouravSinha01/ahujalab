@@ -2,8 +2,11 @@ import React from 'react';
 import { Mail, Briefcase, Github, Linkedin, GraduationCap, ExternalLink } from 'lucide-react';
 import { VideoBackground } from './VideoBackground';
 import { ScrollReveal, StaggerContainer, StaggerChild, SpotlightCard } from './animations/ScrollReveal';
+import { getTeamMembers, getTeamAlumni } from '../utils/dataLoader';
 
-const GRADUATES = [
+const GRADUATES = getTeamMembers();
+
+const UNUSED_GRADUATES = [
   
   {
     name: "Saveena Solanki",
@@ -69,12 +72,12 @@ const GRADUATES = [
     name: "Arushi Sharma",
     role: "PhD Scholar",
     focus: "Powering biomedical discovery using knowledge graphs and Large Language Models",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400",
+    image: "arushis.png",
     links: {
       email: "mailto:arushis@iiitd.ac.in",
-      github: "https://github.com/arushi-sharma-chembio",
-      linkedin: "https://linkedin.com/in/arushi-sharma-bio",
-      scholar: "https://scholar.google.com/citations?user=test_arushi"
+      github: "https://github.com/AruShar",
+      linkedin: "https://www.linkedin.com/in/arushi2699/",
+      scholar: "https://scholar.google.com/citations?user=AfKrQeIAAAAJ&hl=en"
     }
   },
   {
@@ -84,9 +87,9 @@ const GRADUATES = [
     image: "raidhanis.jpeg",
     links: {
       email: "mailto:raidhanis@iiitd.ac.in",
-      github: "https://github.com/raidhani-shome",
-      linkedin: "https://linkedin.com/in/raidhani-shome-bioinfo",
-      scholar: "https://scholar.google.com/citations?user=test_raidhani"
+      github: "https://github.com/rai134340",
+      linkedin: "https://www.linkedin.com/in/raidhani-shome-621b70257/",
+      scholar: "https://scholar.google.com/citations?view_op=new_articles&hl=en&imq=Raidhani+Shome#"
     }
   },
   {
@@ -116,7 +119,9 @@ const GRADUATES = [
 
 ];
 
-const ALUMNI = [
+const ALUMNI = getTeamAlumni();
+
+const UNUSED_ALUMNI = [
   {
     name: "Aayushi Mittal",
     role: "Alumnus",
@@ -168,6 +173,7 @@ const ALUMNI = [
 ];
 
 export const TeamSection: React.FC = () => {
+  // Data is now loaded from JSON via dataLoader
   return (
     <section className="bg-brand-dark transition-colors duration-500 py-24 min-h-screen relative overflow-hidden" id="team">
       <VideoBackground url="https://res.cloudinary.com/dk6oziswk/video/upload/v1779194226/80645-572367655_medium_je8nkr.mp4" interactive={true} />

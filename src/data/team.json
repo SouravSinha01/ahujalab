@@ -1,0 +1,162 @@
+{
+  "graduates": [
+    {
+      "name": "Saveena Solanki",
+      "role": "PhD Scholar",
+      "focus": "Exploring the multivalent-multi-targeting potential of cellular metabolites",
+      "image": "saveenas.png",
+      "links": {
+        "email": "mailto:saveenas@iiitd.ac.in",
+        "github": "https://github.com/SaveenaSolanki",
+        "linkedin": "https://www.linkedin.com/in/saveenasolanki/",
+        "scholar": "https://scholar.google.com/citations?hl=en&tzom=-330&user=5sL2XRYAAAAJ#"
+      }
+    },
+    {
+      "name": "Subhadeep Duari",
+      "role": "PhD Scholar",
+      "focus": "Developing medical and biological computer vision models using Deep Learning",
+      "image": "subhodeepD.jpg",
+      "links": {
+        "email": "mailto:Subhadeepd@iiitd.ac.in",
+        "github": "https://github.com/SubhadeepDuari",
+        "linkedin": "https://www.linkedin.com/in/subhadeep-duari-50a570122/",
+        "scholar": "https://scholar.google.com/citations?user=U4WJ-OoAAAAJ&hl=en"
+      }
+    },
+    {
+      "name": "Shiva Satija",
+      "role": "PhD Scholar",
+      "focus": "Genotoxic research, high-throughput Nanopore sequencing, and generative AI",
+      "image": "shivasa.png",
+      "links": {
+        "email": "mailto:shivasa@iiitd.ac.in",
+        "github": "https://github.com/shiva-satija",
+        "linkedin": "https://www.linkedin.com/in/shivasatija/",
+        "scholar": "https://scholar.google.com/citations?user=K-t5_7IAAAAJ&hl=en"
+      }
+    },
+    {
+      "name": "Sonam Chauhan",
+      "role": "PhD Scholar",
+      "focus": "Systematic exploration of the \"Dark Matter\" of the Chemical World",
+      "image": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=400",
+      "links": {
+        "email": "mailto:sonamc@iiitd.ac.in",
+        "github": "https://github.com/sonam-chauhan",
+        "linkedin": "https://linkedin.com/in/sonam-chauhan-bio",
+        "scholar": "https://scholar.google.com/citations?user=test_sonam"
+      }
+    },
+    {
+      "name": "Suvendu Kumar",
+      "role": "PhD Scholar",
+      "focus": "Designing novel computational methods for chemical compound representation",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+      "links": {
+        "email": "mailto:suvenduk@iiitd.ac.in",
+        "github": "https://github.com/suvendu-kumar",
+        "linkedin": "https://linkedin.com/in/suvendu-kumar-chembio",
+        "scholar": "https://scholar.google.com/citations?user=test_suvendu"
+      }
+    },
+    {
+      "name": "Arushi Sharma",
+      "role": "PhD Scholar",
+      "focus": "Powering biomedical discovery using knowledge graphs and Large Language Models",
+      "image": "arushis.png",
+      "links": {
+        "email": "mailto:arushis@iiitd.ac.in",
+        "github": "https://github.com/AruShar",
+        "linkedin": "https://www.linkedin.com/in/arushi2699/",
+        "scholar": "https://scholar.google.com/citations?user=AfKrQeIAAAAJ&hl=en"
+      }
+    },
+    {
+      "name": "Raidhani Shome",
+      "role": "PhD Scholar",
+      "focus": "Building clinical-grade genomics platforms and advanced analytical methods",
+      "image": "raidhanis.jpeg",
+      "links": {
+        "email": "mailto:raidhanis@iiitd.ac.in",
+        "github": "https://github.com/rai134340",
+        "linkedin": "https://www.linkedin.com/in/raidhani-shome-621b70257/",
+        "scholar": "https://scholar.google.com/citations?view_op=new_articles&hl=en&imq=Raidhani+Shome#"
+      }
+    },
+    {
+      "name": "Sourav Sinha",
+      "role": "PhD Student",
+      "focus": "AI-driven discovery of novel Calorie Restriction Mimetics",
+      "image": "souravs.png",
+      "links": {
+        "email": "mailto:souravs@iiitd.ac.in",
+        "github": "https://github.com/SouravSinha01",
+        "linkedin": "https://www.linkedin.com/in/sourav-sinha001",
+        "scholar": "https://scholar.google.com/citations?user=6hUzTXwAAAAJ&hl=en&authuser=1"
+      }
+    },
+    {
+      "name": "Adnan Raza",
+      "role": "PhD Student",
+      "focus": "Architecting low-level systems frameworks and efficient ML models for bare-metal performance.",
+      "image": "adnanr.png",
+      "links": {
+        "email": "mailto:adnanraza3435@gmail.com",
+        "github": "https://github.com/woosflex",
+        "linkedin": "https://linkedin.com/in/woosflex",
+        "scholar": "https://scholar.google.com/citations?user=fuD1FzcAAAAJ&hl=en"
+      }
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Aayushi Mittal",
+      "role": "Alumnus",
+      "focus": "Former Graduate Student",
+      "image": "/aayushi.png",
+      "links": {
+        "email": "mailto:ayushi@example.com",
+        "linkedin": "",
+        "github": "",
+        "scholar": ""
+      }
+    },
+    {
+      "name": "Vishakha Gautam",
+      "role": "Alumnus",
+      "focus": "Former Graduate Student",
+      "image": "vishakhag.png",
+      "links": {
+        "email": "mailto:vishakhag@iiitd.ac.in",
+        "linkedin": "https://in.linkedin.com/in/vishakha-gautam-663b63114",
+        "github": "https://github.com/vishakha-gautam11041997",
+        "scholar": "https://scholar.google.com/citations?user=RnQzRdoAAAAJ&hl=en"
+      }
+    },
+    {
+      "name": "Sanjay Mohanty",
+      "role": "Alumnus",
+      "focus": "Former Graduate Student",
+      "image": "/sanjaym.png",
+      "links": {
+        "email": "mailto:kumeres741@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/sanjay-741mohanty/",
+        "github": "https://github.com/SanjayISHIGAMI",
+        "scholar": "https://scholar.google.com/citations?user=FzzOfpIAAAAJ&hl=en"
+      }
+    },
+    {
+      "name": "Sakshi Arora",
+      "role": "Alumnus",
+      "focus": "Former Graduate Student",
+      "image": "sakshiA.png",
+      "links": {
+        "email": "mailto:sakshia@iiitd.ac.in",
+        "linkedin": "",
+        "github": "",
+        "scholar": ""
+      }
+    }
+  ]
+}

@@ -1,14 +1,19 @@
 import React from 'react';
 import { Mail, Phone, Globe, BookOpen, Star, Briefcase } from 'lucide-react';
 import { ScrollReveal, StaggerContainer, StaggerChild, SpotlightCard } from './animations/ScrollReveal';
+import { getPiRoles, getPiAwardsWithImages, getPiAwardsWithoutImages } from '../utils/dataLoader';
 
-const ROLES = [
+const ROLES = getPiRoles();
+
+const UNUSED_ROLES = [
   "Associate Professor (Tenured), IIIT-Delhi",
   "EMBO Young Investigator",
   "Core member, Infosys Center for Artificial Intelligence, IIITD"
 ];
 
-const AWARDS_WITH_IMAGES = [
+const AWARDS_WITH_IMAGES = getPiAwardsWithImages();
+
+const UNUSED_AWARDS_WITH_IMAGES = [
   {
     year: "2025",
     title: "Merck Scientific Excellence Award",
@@ -53,7 +58,9 @@ const AWARDS_WITH_IMAGES = [
   }
 ];
 
-const AWARDS_WITHOUT_IMAGES = [
+const AWARDS_WITHOUT_IMAGES = getPiAwardsWithoutImages();
+
+const UNUSED_AWARDS_WITHOUT_IMAGES = [
   {
     year: "2025",
     title: "DIRD Award and Teaching Excellence Award",
@@ -102,6 +109,7 @@ const AWARDS_WITHOUT_IMAGES = [
 ];
 
 export const AboutPISection: React.FC = () => {
+  // Data is now loaded from JSON via dataLoader
   return (
     <section className="bg-brand-dark transition-colors duration-500 py-24 min-h-screen relative overflow-hidden" id="about-pi">
       <div className="absolute inset-0 bg-noise opacity-[0.03] pointer-events-none" />

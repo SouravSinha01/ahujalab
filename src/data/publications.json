@@ -1,0 +1,196 @@
+{
+  "publications": [
+    {
+      "year": "2026",
+      "title": "Mechanism-Aware Deep Learning Maps the Redox Landscape of Cancer-Relevant Antioxidants",
+      "journal": "Chemistry-Methods 2026, 6, e202500160",
+      "authors": "Satija S, Solanki S, Ahuja G.",
+      "doi": "10.1002/cmtd.202500160",
+      "tag": "AI & Redox"
+    },
+    {
+      "year": "2026",
+      "title": "Evolutionary-guided advanced deep-learning architecture powers mammalian GPCRome agonist predictions",
+      "journal": "Cell Rep. 2026 Feb 18;45(3):117003",
+      "authors": "Mittal A, Gupta M, Mohanty SK, Gaur A, Solanki S, Ali SY, Raza A, Sharma P, Kumar S, Gautam V, Satija S, Katyayan N, Tiwari K, Sharma AK, Kaur D, Sengupta D, Gupta SK, Ahuja G.",
+      "doi": "10.1016/j.celrep.2026.117003",
+      "tag": "Deep Learning"
+    },
+    {
+      "year": "2025",
+      "title": "Network-based simultaneous embedding of cells and marker genes from scRNA-seq studies",
+      "journal": "Brief Bioinform. 2025;26(5):bbaf537",
+      "authors": "Bhattacharya N, Chakraborti S, Kumari S, Mathew B, Halder A, Gujral S, Gupta K, Mittal A, Sinha D, Nelson C, Chakraborty T, Ahuja G, Sengupta D.",
+      "doi": "10.1093/bib/bbaf537",
+      "tag": "Network Embedding"
+    },
+    {
+      "year": "2025",
+      "title": "Protocol for cellular age prediction in yeast and human single cells using transfer learning",
+      "journal": "STAR Protoc. 2025;6(3):104023",
+      "authors": "Duari S, Gautam V, Ahuja G.",
+      "doi": "10.1016/j.xpro.2025.104023",
+      "tag": "Transfer Learning"
+    },
+    {
+      "year": "2025",
+      "title": "Deep learning reveals endogenous sterols as allosteric modulators of the GPCR–Gα interface",
+      "journal": "eLife. 2025;14:RP106397",
+      "authors": "Mohanty SK, Mittal A, Namra, Gaur A, Duari S, Solanki S, Sharma AK, Arora S, Kumar S, Gautam V, Dixit NK, Subramanian K, Ghosh TS, Sengupta D, Gupta SK, Murugan NA, Sharma D, Ahuja G.",
+      "doi": "10.7554/eLife.106397.1",
+      "tag": "Deep Learning"
+    },
+    {
+      "year": "2025",
+      "title": "scCamAge: A context-aware prediction engine for cellular age, aging-associated bioactivities, and morphometrics",
+      "journal": "Cell Rep. 2025;44(2):115270",
+      "authors": "Gautam V, Duari S, Solanki S, Gupta M, Mittal A, Arora S, Aggarwal A, Sharma AK, Tyagi S, Pankajbhai RK, Sharma A, Chauhan S, Satija S, Kumar S, Mohanty SK, Tayal J, Dixit NK, Sengupta D, Mehta A, Ahuja G.",
+      "doi": "10.1016/j.celrep.2025.115270",
+      "tag": "Cellular Age"
+    },
+    {
+      "year": "2025",
+      "title": "Discovering geroprotectors through the explainable artificial intelligence-based platform AgeXtend",
+      "journal": "Nat Aging. 2025;5(1):144–161",
+      "authors": "Arora S, Mittal A, Duari S, Chauhan S, Dixit NK, Mohanty SK, Sharma A, Solanki S, Sharma AK, Gautam V, Gahlot PS, Satija S, Nanshi J, Kapoor N, Cb L, Sengupta D, Mehrotra P, Ghosh TS, Ahuja G.",
+      "doi": "10.1038/s43587-024-00763-4",
+      "tag": "AI & Aging"
+    },
+    {
+      "year": "2024",
+      "title": "Pseudo-grading of tumor subpopulations from single-cell transcriptomic data using phenotype algebra",
+      "journal": "eLife. 2024;13:RP98469",
+      "authors": "Bhattacharya N, Rockstroh A, Deshpande SS, Thomas SK, Yadav A, Goswami C, Chawla S, Solomon P, Fourgeux C, Ahuja G, Hollier BG, Kumar H, Roquilly A, Poschmann J, Lehman M, Nelson CC, Sengupta D.",
+      "doi": "10.7554/eLife.98469.1",
+      "tag": "Single Cell"
+    },
+    {
+      "year": "2024",
+      "title": "Literature mining discerns latent disease–gene relationships",
+      "journal": "Bioinformatics. 2024;40(4):btae185",
+      "authors": "Rai P, Jain A, Kumar S, Sharma D, Jha N, Chawla S, Raj A, Gupta A, Poonia S, Majumdar A, Chakraborty T, Ahuja G, Sengupta D.",
+      "doi": "10.1093/bioinformatics/btae185",
+      "tag": "Literature Mining"
+    },
+    {
+      "year": "2024",
+      "title": "Unlocking the mysteries of DNA adducts with artificial intelligence",
+      "journal": "ChemBioChem. 2024;25(1):e202300577",
+      "authors": "Arora S, Satija S, Mittal A, Solanki S, Mohanty SK, Srivastava V, Sengupta D, Rout D, Arul Murugan N, Borkar RM, Ahuja G.",
+      "doi": "10.1002/cbic.202300577",
+      "tag": "AI & DNA"
+    },
+    {
+      "year": "2023",
+      "title": "Advancing chemical carcinogenicity prediction modeling: opportunities and challenges",
+      "journal": "Trends Pharmacol Sci. 2023;44:400–410",
+      "authors": "Mittal A, Ahuja G.",
+      "doi": "10.1016/j.tips.2023.04.002",
+      "tag": "Carcinogenicity"
+    },
+    {
+      "year": "2023",
+      "title": "Marker-free characterization of full-length transcriptomes of single live circulating tumor cells",
+      "journal": "Genome Res. 2023;33:80–95",
+      "authors": "Poonia S, Goel A, Chawla S, Bhattacharya N, Rai P, Lee YF, Yap YS, West J, Bhagat AA, Tayal J, Mehta A, Ahuja G, Majumdar A, Ramalingam N, Sengupta D.",
+      "doi": "10.1101/gr.276600.122",
+      "tag": "Genomics"
+    },
+    {
+      "year": "2023",
+      "title": "mRNA translational specialization by RBPMS presets the competence for cardiac commitment in hESCs",
+      "journal": "Sci Adv. 2023;9:eade1792",
+      "authors": "Bartsch D, Kalamkar K, Ahuja G, Lackmann JW, Hescheler J, Weber T, Bazzi H, Clamer M, Mendjan S, Papantonis A, Kurian L.",
+      "doi": "10.1126/sciadv.ade1792",
+      "tag": "Stem Cells"
+    },
+    {
+      "year": "2023",
+      "title": "Transcriptional advantage influences odorant receptor gene choice",
+      "journal": "Brief Funct Genomics. 2023;22(3):281–290",
+      "authors": "Mohanty SK, Maryam S, Gautam V, Mittal A, Gupta K, Arora R, Bhadra W, Mishra T, Sengupta D, Ahuja G.",
+      "doi": "10.1093/bfgp/elac052",
+      "tag": "Odorant Receptors"
+    },
+    {
+      "year": "2023",
+      "title": "MiR-330-5p and miR-1270 target essential components of RNA polymerase I transcription and exhibit a novel tumor suppressor role in lung adenocarcinoma",
+      "journal": "Cancer Gene Ther. 2023;30(2):288–301",
+      "authors": "Saproo S, Sarkar SS, Gupta E, Chattopadhyay S, Charaya A, Kalra S, Ahuja G, Naidu S.",
+      "doi": "10.1038/s41417-022-00544-4",
+      "tag": "Cancer Biology"
+    },
+    {
+      "year": "2022",
+      "title": "Salivary protein kinase C alpha and novel microRNAs as diagnostic and therapeutic resistance markers for oral squamous cell carcinoma in Indian cohorts",
+      "journal": "Front Mol Biosci. 2022;9:1106963",
+      "authors": "Saproo S, Sarkar SS, Gautam V, Konyak CW, Dass G, Karmakar A, Sharma M, Ahuja G, Gupta A, Tayal J, Mehta A, Naidu S.",
+      "doi": "10.3389/fmolb.2022.1106963",
+      "tag": "Oncology Markers"
+    },
+    {
+      "year": "2022",
+      "title": "Gene expression-based inference of cancer drug sensitivity",
+      "journal": "Nat Commun. 2022;13:5680",
+      "authors": "Chawla S, Rockstroh A, Lehman M, Ratther E, Jain A, Anand A, Gupta A, Bhattacharya N, Poonia S, Rai P, Das N, Majumdar A, Jayadeva, Ahuja G, Hollier BG, Nelson CC, Sengupta D.",
+      "doi": "10.1038/s41467-022-33291-z",
+      "tag": "Drug Sensitivity"
+    },
+    {
+      "year": "2022",
+      "title": "Artificial intelligence uncovers carcinogenic human metabolites",
+      "journal": "Nat Chem Biol. 2022;18(11):1204–1213",
+      "authors": "Mittal A, Mohanty SK, Gautam V, Arora S, Saproo S, Gupta R, Sivakumar R, Garg P, Aggarwal A, Raghavachary P, Dixit NK, Singh VP, Mehta A, Tayal J, Naidu S, Sengupta D, Ahuja G.",
+      "doi": "10.1038/s41589-022-01110-7",
+      "tag": "AI & Metabolites"
+    },
+    {
+      "year": "2022",
+      "title": "deepGraphh: AI-driven web service for graph-based quantitative structure–activity relationship analysis",
+      "journal": "Brief Bioinform. 2022;23(5):bbac288",
+      "authors": "Gautam V, Gupta R, Gupta D, Ruhela A, Mittal A, Mohanty SK, Arora S, Gupta R, Saini C, Sengupta D, Murugan NA, Ahuja G.",
+      "doi": "10.1093/bib/bbac288",
+      "tag": "Graph Networks"
+    },
+    {
+      "year": "2022",
+      "title": "A new deep learning technique reveals the exclusive functional contributions of individual cancer mutations",
+      "journal": "J Biol Chem. 2022;298(8):102177",
+      "authors": "Gupta P, Jindal A, Ahuja G, Jayadeva, Sengupta D.",
+      "doi": "10.1016/j.jbc.2022.102177",
+      "tag": "Deep Learning"
+    },
+    {
+      "year": "2022",
+      "title": "A unified computational framework for robust identification of novel miRNAs from RNA sequencing data",
+      "journal": "Front Bioinform. 2022;2:842051",
+      "authors": "Ruhela V, Gupta A, Sriram K, Ahuja G, Kaur G, Gupta R.",
+      "doi": "10.3389/fbinf.2022.842051",
+      "tag": "microRNA Framework"
+    },
+    {
+      "year": "2021",
+      "title": "Quantification of age-related decline in transcriptional homeostasis",
+      "journal": "J Mol Biol. 2021;433(19):167179",
+      "authors": "Gupta K, Yadav P, Maryam S, Ahuja G, Sengupta D.",
+      "doi": "10.1016/j.jmb.2021.167179",
+      "tag": "Transcription"
+    },
+    {
+      "year": "2021",
+      "title": "OdoriFy: A conglomerate of artificial intelligence-driven prediction engines for olfactory decoding",
+      "journal": "J Biol Chem. 2021;297(2):100956",
+      "authors": "Gupta R, Mittal A, Agrawal V, Gupta S, Gupta K, Jain RR, Garg P, Mohanty SK, Sogani R, Chhabra HS, Gautam V, Mishra T, Sengupta D, Ahuja G.",
+      "doi": "10.1016/j.jbc.2021.100956",
+      "tag": "Olfaction"
+    },
+    {
+      "year": "2021",
+      "title": "EcTracker: Tracking and elucidating ectopic expression leveraging large-scale scRNA-seq studies",
+      "journal": "Brief Bioinform. 2021;22:bbab237",
+      "authors": "Gautam V, Mittal A, Kalra S, Mohanty SK, Gupta K, Rani K, Naidu S, Mishra T, Sengupta D, Ahuja G.",
+      "doi": "10.1093/bib/bbab237",
+      "tag": "Single Cell"
+    }
+  ]
+}

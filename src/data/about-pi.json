@@ -1,0 +1,98 @@
+{
+  "roles": [
+    "Associate Professor (Tenured), IIIT-Delhi",
+    "EMBO Young Investigator",
+    "Core member, Infosys Center for Artificial Intelligence, IIITD"
+  ],
+  "awardsWithImages": [
+    {
+      "year": "2025",
+      "title": "Merck Scientific Excellence Award",
+      "org": "Merck KGaA, Darmstadt, Germany",
+      "desc": "Recognizing outstanding translational research contributions in biological and chemical sciences globally.",
+      "image": "/award_merck.png"
+    },
+    {
+      "year": "2025",
+      "title": "Humboldt Research Fellowship for Experienced Researchers",
+      "org": "Alexander von Humboldt Foundation, Germany",
+      "desc": "Awarded to highly qualified scientists from abroad to carry out long-term research projects in Germany.",
+      "image": "/award_humboldt.png"
+    },
+    {
+      "year": "2024",
+      "title": "Global 3Rs Awards Program",
+      "org": "AAALAC International, USA",
+      "desc": "Honoring outstanding scientific contributions to the 3Rs of animal research globally (Refinement, Replacement, Reduction).",
+      "image": "/award_3rs.png"
+    },
+    {
+      "year": "2024",
+      "title": "INSA Young Associates",
+      "org": "Indian National Science Academy",
+      "desc": "Awarded for exceptional scientific promise, innovation, and high-impact biotechnology contributions.",
+      "image": "/award_insa.png"
+    },
+    {
+      "year": "2024",
+      "title": "Young Investigator Programme (YIP)",
+      "org": "European Molecular Biology Organization (EMBO)",
+      "desc": "Joining a prestigious European network of outstanding life science researchers to advance biomedical discovery.",
+      "image": "/award_embo.png"
+    },
+    {
+      "year": "2022",
+      "title": "INSA Medal for Young Scientists",
+      "org": "Indian National Science Academy",
+      "desc": "The highest recognition for young scientists in India for outstanding contributions to science and technology.",
+      "image": "/award_insa_medal.png"
+    }
+  ],
+  "awardsWithoutImages": [
+    {
+      "year": "2025",
+      "title": "DIRD Award and Teaching Excellence Award",
+      "org": "IIIT-Delhi, New Delhi"
+    },
+    {
+      "year": "2022",
+      "title": "Discovery Track Investigator",
+      "org": "DST Academic Hub"
+    },
+    {
+      "year": "2022",
+      "title": "Research Excellence Award by IIIT-Delhi",
+      "org": "Indraprastha Institute of Information Technology Delhi"
+    },
+    {
+      "year": "2022",
+      "title": "Ramalingaswami Re-entry Fellowship",
+      "org": "Department of Biotechnology, Government of India"
+    },
+    {
+      "year": "2018",
+      "title": "Nominated for the Inspire Faculty Award by DST, India (relinquished)",
+      "org": "Department of Science and Technology (DST), India"
+    },
+    {
+      "year": "2018",
+      "title": "\"Summa cum laude\" (Excellent grade in Ph.D.)",
+      "org": "University of Cologne, Cologne, Germany"
+    },
+    {
+      "year": "2014",
+      "title": "Ph.D. scholarship",
+      "org": "International Graduate School in Development Health and Disease (IGS DHD), University of Cologne, Germany"
+    },
+    {
+      "year": "2013",
+      "title": "UGC-CSIR fellowship (All India rank: 33)",
+      "org": "University Grants Commission, India"
+    },
+    {
+      "year": "2009",
+      "title": "UGC-CSIR fellowship (All India rank: 222)",
+      "org": "University Grants Commission, India"
+    }
+  ]
+}

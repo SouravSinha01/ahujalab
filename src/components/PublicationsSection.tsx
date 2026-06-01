@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { BookOpen, ExternalLink, Search } from 'lucide-react';
 import { ScrollReveal } from './animations/ScrollReveal';
+import { getPublications } from '../utils/dataLoader';
 
-const PUBLICATIONS_LIST = [
+const PUBLICATIONS_LIST = getPublications();
+
+const UNUSED_PUBLICATIONS_LIST = [
   {
     year: "2026",
     title: "Mechanism-Aware Deep Learning Maps the Redox Landscape of Cancer-Relevant Antioxidants",
@@ -383,6 +386,7 @@ const formatAuthors = (authors: string) => {
 };
 
 export const PublicationsSection: React.FC = () => {
+  // Data is now loaded from JSON via dataLoader
   const [hoveredDoi, setHoveredDoi] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
 
