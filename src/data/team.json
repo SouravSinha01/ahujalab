@@ -16,7 +16,7 @@
       "name": "Subhadeep Duari",
       "role": "PhD Scholar",
       "focus": "Developing medical and biological computer vision models using Deep Learning",
-      "image": "subhodeepD.jpeg",
+      "image": "subhodeepD.jpg",
       "links": {
         "email": "mailto:Subhadeepd@iiitd.ac.in",
         "github": "https://github.com/SubhadeepDuari",
@@ -96,19 +96,19 @@
         "scholar": "https://scholar.google.com/citations?user=6hUzTXwAAAAJ&hl=en&authuser=1"
       }
     },
-    /*
-    {
-      "name": "Adnan Raza",
-      "role": "PhD Student",
-      "focus": "Architecting low-level systems frameworks and efficient ML models for bare-metal performance.",
-      "image": "adnanr.png",
-      "links": {
-        "email": "mailto:adnanraza3435@gmail.com",
-        "github": "https://github.com/woosflex",
-        "linkedin": "https://linkedin.com/in/woosflex",
-        "scholar": "https://scholar.google.com/citations?user=fuD1FzcAAAAJ&hl=en"
-      }
-    } */
+    
+    // {
+    //   "name": "Adnan Raza",
+    //   "role": "PhD Student",
+    //   "focus": "Architecting low-level systems frameworks and efficient ML models for bare-metal performance.",
+    //   "image": "adnanr.png",
+    //   "links": {
+    //     "email": "mailto:adnanraza3435@gmail.com",
+    //     "github": "https://github.com/woosflex",
+    //     "linkedin": "https://linkedin.com/in/woosflex",
+    //     "scholar": "https://scholar.google.com/citations?user=fuD1FzcAAAAJ&hl=en"
+    //   }
+    // }
   ],
   "alumni": [
     {
