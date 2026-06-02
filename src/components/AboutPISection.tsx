@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Globe, BookOpen, Star, Briefcase } from 'lucide-react';
+import { Mail, Phone, Globe, BookOpen, Star, Briefcase, Linkedin } from 'lucide-react';
 import { ScrollReveal, StaggerContainer, StaggerChild, SpotlightCard } from './animations/ScrollReveal';
 import { getPiRoles, getPiAwardsWithImages, getPiAwardsWithoutImages } from '../utils/dataLoader';
 
@@ -157,6 +157,9 @@ export const AboutPISection: React.FC = () => {
               <div className="flex items-center gap-3 text-brand-text-muted">
                 <Mail className="w-4 h-4 text-brand-teal shrink-0" />
                 <a href="mailto:gaurav.ahuja@iiitd.ac.in" className="hover:text-brand-text transition-colors">gaurav.ahuja@iiitd.ac.in</a>
+                <a href="https://www.linkedin.com/in/gaurav-ahuja-37bb422b" target="_blank" rel="noopener noreferrer" className="ml-3 hover:text-brand-text transition-colors flex items-center gap-2">
+                  <Linkedin Logo className="w-4 h-4 text-brand-teal" />
+                </a>
               </div>
               <div className="flex items-center gap-3 text-brand-text-muted">
                 <Phone className="w-4 h-4 text-brand-teal shrink-0" />

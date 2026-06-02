@@ -36,6 +36,18 @@ export default function App() {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
+  const handleFooterNavigation = (tab: string, scrollTarget?: string) => {
+    setActiveTab(tab);
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    if (scrollTarget) {
+      window.setTimeout(() => {
+        document.getElementById(scrollTarget)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 0);
+    }
+  };
+
   const renderActiveSection = () => {
     switch (activeTab) {
       case 'home':
@@ -104,7 +116,7 @@ export default function App() {
 
       <Navbar theme={theme} toggleTheme={toggleTheme} activeTab={activeTab} setActiveTab={setActiveTab} />
       {renderActiveSection()}
-      <Footer />
+      <Footer onNavigate={handleFooterNavigation} />
     </main>
   );
 }

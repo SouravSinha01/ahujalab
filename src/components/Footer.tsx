@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Mail, MapPin, Twitter, X } from 'lucide-react';
 
+interface FooterProps {
+  onNavigate: (tab: string, scrollTarget?: string) => void;
+}
+
 function MapPinButton() {
   const [open, setOpen] = useState(false);
 
@@ -57,7 +61,7 @@ function MapPinButton() {
   );
 }
 
-export const Footer: React.FC = () => {
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-brand-dark py-24 border-t border-brand-border transition-colors duration-500" id="contact">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12">
@@ -70,26 +74,44 @@ export const Footer: React.FC = () => {
               Decoding the dark molecules of life through the lens of artificial intelligence and systems biology. Located at the Indraprastha Institute of Information Technology, Delhi.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center text-brand-text hover:bg-brand-teal hover:text-brand-btn-text hover:border-brand-teal transition-all">
+              <a href="https://github.com/the-ahuja-lab" target="_blank" rel="noopener noreferrer"className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center text-brand-text hover:bg-brand-teal hover:text-brand-btn-text hover:border-brand-teal transition-all">
                 <Github className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center text-brand-text hover:bg-brand-teal hover:text-brand-btn-text hover:border-brand-teal transition-all">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center text-brand-text hover:bg-brand-teal hover:text-brand-btn-text hover:border-brand-teal transition-all">
-                <Mail className="w-5 h-5" />
-              </a>
+              
             </div>
           </div>
 
           <div className="space-y-6">
             <h4 className="font-mono text-xs  uppercase text-brand-teal tracking-widest font-bold">Navigation</h4>
             <ul className="space-y-3 font-mono text-[11px] uppercase tracking-wider text-brand-text-muted font-bold">
-              <li><a href="#hero" className="hover:text-brand-teal transition-colors">Home</a></li>
-              <li><a href="#science" className="hover:text-brand-teal transition-colors">Science</a></li>
-              <li><a href="#team" className="hover:text-brand-teal transition-colors">The Team</a></li>
-              <li><a href="#about" className="hover:text-brand-teal transition-colors">Our Story</a></li>
-              <li><a href="#publications" className="hover:text-brand-teal transition-colors">Publications</a></li>
+              <li>
+                <button type="button" onClick={() => onNavigate('home')} className="hover:text-brand-teal transition-colors text-left">
+                  Home
+                </button>
+              </li>
+              <li>
+                <button type="button" onClick={() => onNavigate('science')} className="hover:text-brand-teal transition-colors text-left">
+                  Science
+                </button>
+              </li>
+              <li>
+                <button type="button" onClick={() => onNavigate('team')} className="hover:text-brand-teal transition-colors text-left">
+                  The Team
+                </button>
+              </li>
+              <li>
+                <button type="button" onClick={() => onNavigate('home', 'about-home')} className="hover:text-brand-teal transition-colors text-left">
+                  Our Story
+                </button>
+              </li>
+              <li>
+                <button type="button" onClick={() => onNavigate('publications')} className="hover:text-brand-teal transition-colors text-left">
+                  Publications
+                </button>
+              </li>
             </ul>
           </div>
 
