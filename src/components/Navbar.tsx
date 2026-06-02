@@ -55,8 +55,8 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, activeTab, s
           onClick={() => handleLinkClick('home')} 
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-8 h-8 rounded-full bg-brand-teal/10 border border-brand-teal/30 flex items-center justify-center group-hover:bg-brand-teal/20 transition-colors">
-            <FlaskConical className="w-4 h-4 text-brand-teal animate-pulse" />
+          <div className="w-8 h-8 rounded-full bg-brand-teal/10 border border-brand-teal/30 flex items-center justify-center group-hover:bg-brand-teal/20 transition-colors overflow-hidden">
+            <img src="/cbl.png" alt="CBL logo" className="w-5 h-5 object-contain" />
           </div>
           <span className="font-syne font-bold text-base tracking-tight uppercase text-brand-text">
             Chemical Biology Lab
