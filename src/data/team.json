@@ -96,19 +96,9 @@
         "scholar": "https://scholar.google.com/citations?user=6hUzTXwAAAAJ&hl=en&authuser=1"
       }
     }
-    
-    // {
-    //   "name": "Adnan Raza",
-    //   "role": "PhD Student",
-    //   "focus": "Architecting low-level systems frameworks and efficient ML models for bare-metal performance.",
-    //   "image": "adnanr.png",
-    //   "links": {
-    //     "email": "mailto:adnanraza3435@gmail.com",
-    //     "github": "https://github.com/woosflex",
-    //     "linkedin": "https://linkedin.com/in/woosflex",
-    //     "scholar": "https://scholar.google.com/citations?user=fuD1FzcAAAAJ&hl=en"
-    //   }
-    // }
+  ],
+  "archivedNotes": [
+    "{\n  \"name\": \"Adnan Raza\",\n  \"role\": \"PhD Student\",\n  \"focus\": \"Architecting low-level systems frameworks and efficient ML models for bare-metal performance.\",\n  \"image\": \"adnanr.png\",\n  \"links\": {\n    \"email\": \"mailto:adnanraza3435@gmail.com\",\n    \"github\": \"https://github.com/woosflex\",\n    \"linkedin\": \"https://linkedin.com/in/woosflex\",\n    \"scholar\": \"https://scholar.google.com/citations?user=fuD1FzcAAAAJ&hl=en\"\n  }\n}"
   ],
   "alumni": [
     {
