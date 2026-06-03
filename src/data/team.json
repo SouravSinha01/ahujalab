@@ -40,23 +40,23 @@
       "name": "Sonam Chauhan",
       "role": "PhD Scholar",
       "focus": "Systematic exploration of the \"Dark Matter\" of the Chemical World",
-      "image": "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&q=80&w=400",
+      "image": "sonamc.jpeg",
       "links": {
         "email": "mailto:sonamc@iiitd.ac.in",
-        "github": "https://github.com/sonam-chauhan",
-        "linkedin": "https://linkedin.com/in/sonam-chauhan-bio",
-        "scholar": "https://scholar.google.com/citations?user=test_sonam"
+        "github": "https://github.com/sonamc-blip",
+        "linkedin": "https://www.linkedin.com/in/sonam-chauhan-a56138170/",
+        "scholar": "https://scholar.google.com/citations?hl=en&tzom=-330&user=CYV1YccAAAAJ"
       }
     },
     {
       "name": "Suvendu Kumar",
       "role": "PhD Scholar",
       "focus": "Designing novel computational methods for chemical compound representation",
-      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+      "image": "suvenduk.jpeg",
       "links": {
         "email": "mailto:suvenduk@iiitd.ac.in",
         "github": "https://github.com/suvendu-kumar",
-        "linkedin": "https://linkedin.com/in/suvendu-kumar-chembio",
+        "linkedin": "https://linkedin.com/in/",
         "scholar": "https://scholar.google.com/citations?user=test_suvendu"
       }
     },
