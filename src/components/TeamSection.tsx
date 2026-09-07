@@ -142,7 +142,7 @@ export const TeamSection: React.FC = () => {
         <div className="max-w-4xl mt-12 mb-8">
          
           <ScrollReveal variant="fadeIn" delay={0.2}>
-            <h2 className="font-syne font-bold text-3xl sm:text-brand-teal-4xl leading-[0.95] tracking-tight uppercase text-brand-text mb-4">Former Members<span className="text-brand-teal">.</span></h2>
+            <h2 className="font-syne font-bold text-3xl sm:text-brand-teal-4xl leading-[0.95] tracking-tight uppercase text-brand-text mb-4">ALUMNI <span className="text-brand-teal">.</span></h2>
             <p className="font-instrument text-base text-brand-text-muted leading-relaxed font-light italic">Once part of the lab, always part of the journey ❤️.</p>
           </ScrollReveal>
         </div>
