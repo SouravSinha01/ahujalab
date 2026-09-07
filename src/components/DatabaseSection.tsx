@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpen, Database, ExternalLink } from 'lucide-react';
-import { ScrollReveal, SpotlightCard } from './animations/ScrollReveal';
+import { motion } from 'motion/react';
+import { ScrollReveal, SpotlightCard, usePrefersReducedMotion } from './animations/ScrollReveal';
 
 const DATABASES = [
   {
@@ -11,10 +12,67 @@ const DATABASES = [
   },
 ];
 
+const DatabaseBackdrop: React.FC = () => {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+      <svg
+        className="absolute inset-0 w-full h-full text-brand-teal"
+        viewBox="0 0 1200 700"
+        preserveAspectRatio="xMidYMid slice"
+        fill="none"
+      >
+        <circle cx="1030" cy="120" r="230" stroke="currentColor" strokeOpacity="0.05" />
+        <circle cx="1030" cy="120" r="155" stroke="currentColor" strokeOpacity="0.07" />
+        <path
+          d="M-80 590C170 420 315 520 500 388C690 252 790 350 1280 116"
+          stroke="currentColor"
+          strokeOpacity="0.06"
+        />
+
+        <motion.g
+          initial={false}
+          whileInView={prefersReducedMotion ? undefined : { x: [0, 14, 0], y: [0, -10, 0], rotate: [0, 1.5, 0] }}
+          viewport={{ amount: 0.1 }}
+          transition={{ duration: 20, repeat: Infinity, ease: [0.16, 1, 0.3, 1] }}
+          style={{ transformOrigin: '600px 350px' }}
+        >
+          <g stroke="currentColor" strokeOpacity="0.11">
+            <path d="M92 178L238 112L352 226L514 146" />
+            <path d="M238 112L286 346L352 226" />
+            <path d="M286 346L472 430L602 306L760 382" />
+            <path d="M514 146L602 306L782 190L936 274" />
+            <path d="M760 382L936 274L1088 410" />
+            <path d="M472 430L630 548L824 502L1088 410" />
+          </g>
+
+          <g fill="currentColor">
+            <circle cx="92" cy="178" r="4" fillOpacity="0.18" />
+            <circle cx="238" cy="112" r="6" fillOpacity="0.22" />
+            <circle cx="352" cy="226" r="4" fillOpacity="0.16" />
+            <circle cx="286" cy="346" r="5" fillOpacity="0.2" />
+            <circle cx="514" cy="146" r="7" fillOpacity="0.18" />
+            <circle cx="472" cy="430" r="4" fillOpacity="0.18" />
+            <circle cx="602" cy="306" r="6" fillOpacity="0.24" />
+            <circle cx="760" cy="382" r="4" fillOpacity="0.18" />
+            <circle cx="782" cy="190" r="5" fillOpacity="0.2" />
+            <circle cx="936" cy="274" r="7" fillOpacity="0.2" />
+            <circle cx="1088" cy="410" r="5" fillOpacity="0.18" />
+            <circle cx="630" cy="548" r="4" fillOpacity="0.16" />
+            <circle cx="824" cy="502" r="6" fillOpacity="0.2" />
+          </g>
+        </motion.g>
+      </svg>
+    </div>
+  );
+};
+
 export const DatabaseSection: React.FC = () => {
   return (
     <section className="bg-brand-dark transition-colors duration-500 py-32 min-h-screen relative overflow-hidden" id="database">
       <div className="absolute inset-0 bg-noise opacity-[0.03] pointer-events-none" />
+      <DatabaseBackdrop />
 
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 w-full relative z-10">
         <ScrollReveal variant="fadeUp" delay={0.1} className="max-w-2xl mb-12">
