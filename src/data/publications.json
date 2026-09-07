@@ -2,6 +2,30 @@
   "publications": [
     {
       "year": "2026",
+      "title": "OncoGen.AI: an integrated platform for automated genomic analysis and reporting in precision oncology",
+      "journal": "npj Precis Oncol. 2026",
+      "authors": "Shome R, Kumar S, Mohanty SK, Dholakia D, Sharma A, Solanki S, Sharma S, Chauhan S, Satija S, Diwan H, Panigrahi MK, Tayal J, Mehta A, Ahuja G.",
+      "doi": "10.1038/s41698-026-01578-9",
+      "tag": "Precision Oncology"
+    },
+    {
+      "year": "2026",
+      "title": "MutAIverse: an AI-powered, mechanism-backed platform for discovering novel DNA adducts and their precursor genotoxins",
+      "journal": "J Cheminform. 2026;18(1):116",
+      "authors": "Satija S, Mohanty SK, Jorvekar SB, Verma A, Solanki S, Gautam V, Arora S, Mittal A, Sharma A, Chauhan S, Duari S, Kumar S, Rai A, Das A, Kakati K, Das K, Sarma A, Tayal J, Sengupta D, Mehta A, Borkar RM, Ahuja G.",
+      "doi": "10.1186/s13321-026-01238-x",
+      "tag": "AI & DNA"
+    },
+    {
+      "year": "2026",
+      "title": "Mechanism-Aware Deep Learning Maps the Redox Landscape of Cancer-Relevant Antioxidants",
+      "journal": "Chemistry-Methods 2026, 6, e202500160",
+      "authors": "Satija S, Solanki S, Ahuja G.",
+      "doi": "10.1002/cmtd.202500160",
+      "tag": "AI & Redox"
+    },
+    {
+      "year": "2026",
       "title": "Mechanism-Aware Deep Learning Maps the Redox Landscape of Cancer-Relevant Antioxidants",
       "journal": "Chemistry-Methods 2026, 6, e202500160",
       "authors": "Satija S, Solanki S, Ahuja G.",

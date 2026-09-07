@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-[2fr_1fr_1.5fr] gap-16">
           <div className="space-y-8">
             <h2 className="text-3xl font-syne font-bold uppercase tracking-tighter text-brand-text transition-colors duration-500">
-              Ahuja Lab<span className="text-brand-teal">.</span>
+              Ahuja Lab
             </h2>
             <p className="max-w-md text-brand-text-muted text-sm leading-relaxed">
               Decoding the dark molecules of life through the lens of artificial intelligence and systems biology. Located at the Indraprastha Institute of Information Technology, Delhi.
