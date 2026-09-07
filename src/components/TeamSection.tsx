@@ -61,7 +61,7 @@ export const TeamSection: React.FC = () => {
                       src={member.image}
                       referrerPolicy="no-referrer"
                       alt={member.name}
-                      className="w-full h-full object-contain object-center grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700 hover:scale-105"
                     />
                     <div className="absolute bottom-2 left-2 font-mono text-[10px] text-brand-teal bg-brand-dark/80 px-2 py-0.5 border border-brand-teal/30 font-bold tracking-widest uppercase">
                       PhD
@@ -140,7 +140,7 @@ export const TeamSection: React.FC = () => {
 
         {/* Alumni Section: Passed-out members */}
         <div className="max-w-4xl mt-12 mb-8">
-
+         
           <ScrollReveal variant="fadeIn" delay={0.2}>
             <h2 className="font-syne font-bold text-3xl sm:text-brand-teal-4xl leading-[0.95] tracking-tight uppercase text-brand-text mb-4">Former Members<span className="text-brand-teal">.</span></h2>
             <p className="font-instrument text-base text-brand-text-muted leading-relaxed font-light italic">Once part of the lab, always part of the journey ❤️.</p>
@@ -163,7 +163,7 @@ export const TeamSection: React.FC = () => {
                       src={member.image}
                       referrerPolicy="no-referrer"
                       alt={member.name}
-                      className="w-full h-full object-contain object-center grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700 hover:scale-105"
                     />
                     <div className="absolute bottom-2 left-2 font-mono text-[10px] text-brand-teal bg-brand-dark/80 px-2 py-0.5 border border-brand-teal/30 font-bold tracking-widest uppercase">
                       ALUMNI
