@@ -41,7 +41,7 @@ const DatabaseBackdrop: React.FC = () => {
           initial={false}
           whileInView={prefersReducedMotion ? undefined : { x: [0, 14, 0], y: [0, -10, 0], rotate: [0, 1.5, 0] }}
           viewport={{ amount: 0.1 }}
-          transition={{ duration: 20, repeat: Infinity, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 5, repeat: Infinity, ease: [0.16, 1, 0.3, 1] }}
           style={{ transformOrigin: '600px 350px' }}
         >
           <g stroke="currentColor" strokeOpacity="0.11">
