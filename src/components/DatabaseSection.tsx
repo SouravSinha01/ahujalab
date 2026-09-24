@@ -1,23 +1,75 @@
 import React from 'react';
 import { BookOpen, Database, ExternalLink } from 'lucide-react';
 import { motion } from 'motion/react';
-import { ScrollReveal, SpotlightCard, usePrefersReducedMotion } from './animations/ScrollReveal';
+import {
+  ScrollReveal,
+  SpotlightCard,
+  StaggerChild,
+  StaggerContainer,
+  usePrefersReducedMotion,
+} from './animations/ScrollReveal';
 
 const DATABASES = [
   {
     name: 'EvOlf',
+    category: 'Mammalian GPCRome',
     description: 'A deep-learning platform for predicting agonist–GPCR interactions across mammalian species.',
     url: 'https://evolf.ahujalab.iiitd.edu.in/',
     paperUrl: 'https://doi.org/10.1016/j.celrep.2026.117003',
   },
   {
-    name: 'Odorify ',
-    description: 'OdoriFy is an open-source, AI-driven web server that uses deep neural networks and explainable artificial intelligence to predict, analyze, and decode human olfactory receptor and odorant interactions',
+    name: 'OdoriFy',
+    category: 'Human olfaction',
+    description: 'An open-source AI web server for predicting and explaining human olfactory receptor–odorant interactions.',
     url: 'https://odorify.ahujalab.iiitd.edu.in/olfy/',
     paperUrl: 'https://dx.doi.org/10.1016/J.JBC.2021.100956',
   },
 ];
 
+const NETWORK_PATHS = [
+  'M40 100L185 180L340 90L505 220L670 115L835 245L1015 105L1160 205',
+  'M75 430L260 535L445 405L620 565L790 440L980 560L1145 405',
+  'M75 430L185 180L260 535',
+  'M340 90L445 405L505 220L620 565',
+  'M670 115L790 440L835 245L980 560',
+  'M1015 105L1145 405',
+];
+
+const NETWORK_NODES = [
+  { cx: 40, cy: 100 },
+  { cx: 185, cy: 180 },
+  { cx: 340, cy: 90 },
+  { cx: 505, cy: 220 },
+  { cx: 670, cy: 115 },
+  { cx: 835, cy: 245 },
+  { cx: 1015, cy: 105 },
+  { cx: 1160, cy: 205 },
+  { cx: 75, cy: 430 },
+  { cx: 260, cy: 535 },
+  { cx: 445, cy: 405 },
+  { cx: 620, cy: 565 },
+  { cx: 790, cy: 440 },
+  { cx: 980, cy: 560 },
+  { cx: 1145, cy: 405 },
+];
+
+const SIGNAL_ROUTES = [
+  {
+    points: [[40, 100], [185, 180], [340, 90], [505, 220], [670, 115], [835, 245], [1015, 105], [1160, 205]],
+    duration: 10,
+    delay: 0,
+  },
+  {
+    points: [[75, 430], [260, 535], [445, 405], [620, 565], [790, 440], [980, 560], [1145, 405]],
+    duration: 11,
+    delay: 1.8,
+  },
+  {
+    points: [[185, 180], [260, 535], [445, 405], [340, 90], [505, 220], [620, 565]],
+    duration: 8,
+    delay: 3.2,
+  },
+];
 const DatabaseBackdrop: React.FC = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -29,51 +81,65 @@ const DatabaseBackdrop: React.FC = () => {
         preserveAspectRatio="xMidYMid slice"
         fill="none"
       >
-        <circle cx="1030" cy="120" r="230" stroke="currentColor" strokeOpacity="0.05" />
-        <circle cx="1030" cy="120" r="155" stroke="currentColor" strokeOpacity="0.07" />
-        <path
-          d="M-80 590C170 420 315 520 500 388C690 252 790 350 1280 116"
+        <g
           stroke="currentColor"
-          strokeOpacity="0.06"
-        />
-
-        <motion.g
-          initial={false}
-          whileInView={prefersReducedMotion ? undefined : { x: [0, 14, 0], y: [0, -10, 0], rotate: [0, 1.5, 0] }}
-          viewport={{ amount: 0.1 }}
-          transition={{ duration: 5, repeat: Infinity, ease: [0.16, 1, 0.3, 1] }}
-          style={{ transformOrigin: '600px 350px' }}
+          strokeOpacity="0.1"
+          strokeWidth="1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
-          <g stroke="currentColor" strokeOpacity="0.11">
-            <path d="M92 178L238 112L352 226L514 146" />
-            <path d="M238 112L286 346L352 226" />
-            <path d="M286 346L472 430L602 306L760 382" />
-            <path d="M514 146L602 306L782 190L936 274" />
-            <path d="M760 382L936 274L1088 410" />
-            <path d="M472 430L630 548L824 502L1088 410" />
-          </g>
+          {NETWORK_PATHS.map((networkPath) => (
+            <path key={networkPath} d={networkPath} />
+          ))}
+        </g>
 
-          <g fill="currentColor">
-            <circle cx="92" cy="178" r="4" fillOpacity="0.18" />
-            <circle cx="238" cy="112" r="6" fillOpacity="0.22" />
-            <circle cx="352" cy="226" r="4" fillOpacity="0.16" />
-            <circle cx="286" cy="346" r="5" fillOpacity="0.2" />
-            <circle cx="514" cy="146" r="7" fillOpacity="0.18" />
-            <circle cx="472" cy="430" r="4" fillOpacity="0.18" />
-            <circle cx="602" cy="306" r="6" fillOpacity="0.24" />
-            <circle cx="760" cy="382" r="4" fillOpacity="0.18" />
-            <circle cx="782" cy="190" r="5" fillOpacity="0.2" />
-            <circle cx="936" cy="274" r="7" fillOpacity="0.2" />
-            <circle cx="1088" cy="410" r="5" fillOpacity="0.18" />
-            <circle cx="630" cy="548" r="4" fillOpacity="0.16" />
-            <circle cx="824" cy="502" r="6" fillOpacity="0.2" />
-          </g>
-        </motion.g>
+        <g fill="currentColor">
+          {NETWORK_NODES.map(({ cx, cy }) => (
+            <React.Fragment key={cx + '-' + cy}>
+              <circle cx={cx} cy={cy} r="8" fillOpacity="0.035" />
+              <circle cx={cx} cy={cy} r="3.5" fillOpacity="0.24" />
+            </React.Fragment>
+          ))}
+        </g>
+
+        {!prefersReducedMotion && SIGNAL_ROUTES.map((route, routeIndex) => {
+          const xPositions = route.points.map(([cx]) => cx);
+          const yPositions = route.points.map(([, cy]) => cy);
+          const opacity = route.points.map((_, index) => (
+            index === 0 || index === route.points.length - 1 ? 0 : 0.9
+          ));
+          const transition = {
+            duration: route.duration,
+            delay: route.delay,
+            repeat: Infinity,
+            ease: 'linear' as const,
+          };
+
+          return (
+            <React.Fragment key={routeIndex}>
+              <motion.circle
+                r="9"
+                fill="currentColor"
+                initial={false}
+                whileInView={{ cx: xPositions, cy: yPositions, opacity: opacity.map((value) => value * 0.1) }}
+                viewport={{ amount: 0.1 }}
+                transition={transition}
+              />
+              <motion.circle
+                r="2.75"
+                fill="currentColor"
+                initial={false}
+                whileInView={{ cx: xPositions, cy: yPositions, opacity }}
+                viewport={{ amount: 0.1 }}
+                transition={transition}
+              />
+            </React.Fragment>
+          );
+        })}
       </svg>
     </div>
   );
 };
-
 export const DatabaseSection: React.FC = () => {
   return (
     <section className="bg-brand-dark transition-colors duration-500 py-32 min-h-screen relative overflow-hidden" id="database">
@@ -90,16 +156,25 @@ export const DatabaseSection: React.FC = () => {
           </p>
         </ScrollReveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <StaggerContainer
+          className="grid sm:grid-cols-2 gap-6 max-w-6xl"
+          staggerConfig={{ staggerChildren: 0.12, delayChildren: 0.08 }}
+        >
           {DATABASES.map((database) => (
-            <ScrollReveal key={database.name} variant="scaleIn" delay={0.15}>
+            <StaggerChild key={database.name} variant="fadeUp">
               <SpotlightCard
-                className="border border-brand-border bg-brand-card dark:bg-[#0C0E12] p-6 rounded-[2px] relative shadow-xs h-full"
+                className="group/database border border-brand-border bg-brand-card dark:bg-[#0C0E12] p-6 sm:p-7 rounded-[2px] relative shadow-xs h-full"
                 glowColor="rgba(20, 184, 166, 0.15)"
               >
+                <div className="absolute inset-x-0 top-0 h-px bg-brand-teal origin-left scale-x-0 transition-transform duration-500 ease-out group-hover/database:scale-x-100 group-focus-within/database:scale-x-100" />
                 <article className="relative z-10 flex flex-col h-full">
-                  <div className="w-11 h-11 rounded-full border border-brand-border bg-brand-dark/30 flex items-center justify-center text-brand-teal mb-6">
-                    <Database className="w-5 h-5" aria-hidden="true" />
+                  <div className="flex items-start justify-between gap-5 mb-7">
+                    <div className="w-11 h-11 rounded-full border border-brand-border bg-brand-dark/30 flex items-center justify-center text-brand-teal transition-colors duration-300 group-hover/database:border-brand-teal/40">
+                      <Database className="w-5 h-5 transition-transform duration-300 ease-out group-hover/database:scale-110" aria-hidden="true" />
+                    </div>
+                    <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.14em] text-brand-text-muted text-right leading-relaxed">
+                      {database.category}
+                    </span>
                   </div>
 
                   <h3 className="font-syne font-bold text-2xl uppercase tracking-tight text-brand-text mb-3">
@@ -114,10 +189,10 @@ export const DatabaseSection: React.FC = () => {
                       href={database.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="min-h-11 px-4 py-3 inline-flex items-center justify-center gap-2 bg-brand-teal text-brand-text dark:text-brand-btn-text font-mono text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 rounded-[2px] transition-colors duration-200 hover:bg-brand-teal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-teal"
+                      className="group/open min-h-11 px-4 py-3 inline-flex items-center justify-center gap-2 bg-brand-teal text-brand-text dark:text-brand-btn-text font-mono text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 rounded-[2px] transition-colors duration-200 hover:bg-brand-teal/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-teal"
                     >
                       Open
-                      <ExternalLink className="w-4 h-4" aria-hidden="true" />
+                      <ExternalLink className="w-4 h-4 transition-transform duration-200 group-hover/open:translate-x-0.5 group-hover/open:-translate-y-0.5" aria-hidden="true" />
                     </a>
                     <a
                       href={database.paperUrl}
@@ -131,9 +206,9 @@ export const DatabaseSection: React.FC = () => {
                   </div>
                 </article>
               </SpotlightCard>
-            </ScrollReveal>
+            </StaggerChild>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
