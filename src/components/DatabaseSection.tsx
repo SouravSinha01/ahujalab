@@ -13,7 +13,7 @@ const DATABASES = [
   {
     name: 'Odorify ',
     description: 'OdoriFy is an open-source, AI-driven web server that uses deep neural networks and explainable artificial intelligence to predict, analyze, and decode human olfactory receptor and odorant interactions',
-    url: 'https://odorify.ahujalab.iiitd.edu.in/olfy/,
+    url: 'https://odorify.ahujalab.iiitd.edu.in/olfy/',
     paperUrl: 'https://dx.doi.org/10.1016/J.JBC.2021.100956',
   },
 ];
