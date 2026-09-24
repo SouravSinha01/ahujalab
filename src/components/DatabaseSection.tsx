@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { BookOpen, Database, ExternalLink } from 'lucide-react';
-import { motion } from 'motion/react';
+import { useInView } from 'motion/react';
 import {
   ScrollReveal,
   SpotlightCard,
@@ -55,26 +55,32 @@ const NETWORK_NODES = [
 
 const SIGNAL_ROUTES = [
   {
-    points: [[40, 100], [185, 180], [340, 90], [505, 220], [670, 115], [835, 245], [1015, 105], [1160, 205]],
-    duration: 10,
+    path: 'M40 100L185 180L340 90L505 220L670 115L835 245L1015 105L1160 205',
+    duration: 8,
     delay: 0,
   },
   {
-    points: [[75, 430], [260, 535], [445, 405], [620, 565], [790, 440], [980, 560], [1145, 405]],
-    duration: 11,
-    delay: 1.8,
+    path: 'M75 430L260 535L445 405L620 565L790 440L980 560L1145 405',
+    duration: 9,
+    delay: 1.4,
   },
   {
-    points: [[185, 180], [260, 535], [445, 405], [340, 90], [505, 220], [620, 565]],
-    duration: 8,
-    delay: 3.2,
+    path: 'M185 180L260 535L445 405L340 90L505 220L620 565',
+    duration: 7,
+    delay: 2.8,
   },
 ];
 const DatabaseBackdrop: React.FC = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
+  const backdropRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(backdropRef, { amount: 0.1 });
 
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+    <div
+      ref={backdropRef}
+      className="absolute inset-0 pointer-events-none overflow-hidden"
+      aria-hidden="true"
+    >
       <svg
         className="absolute inset-0 w-full h-full text-brand-teal"
         viewBox="0 0 1200 700"
@@ -96,43 +102,50 @@ const DatabaseBackdrop: React.FC = () => {
         <g fill="currentColor">
           {NETWORK_NODES.map(({ cx, cy }) => (
             <React.Fragment key={cx + '-' + cy}>
-              <circle cx={cx} cy={cy} r="8" fillOpacity="0.035" />
-              <circle cx={cx} cy={cy} r="3.5" fillOpacity="0.24" />
+              <circle cx={cx} cy={cy} r="8" fillOpacity="0.05" />
+              <circle cx={cx} cy={cy} r="3.5" fillOpacity="0.3" />
             </React.Fragment>
           ))}
         </g>
 
-        {!prefersReducedMotion && SIGNAL_ROUTES.map((route, routeIndex) => {
-          const xPositions = route.points.map(([cx]) => cx);
-          const yPositions = route.points.map(([, cy]) => cy);
-          const opacity = route.points.map((_, index) => (
-            index === 0 || index === route.points.length - 1 ? 0 : 0.9
-          ));
-          const transition = {
-            duration: route.duration,
-            delay: route.delay,
-            repeat: Infinity,
-            ease: 'linear' as const,
-          };
+        {isInView && !prefersReducedMotion && SIGNAL_ROUTES.map((route) => {
+          const duration = route.duration + 's';
+          const begin = route.delay + 's';
 
           return (
-            <React.Fragment key={routeIndex}>
-              <motion.circle
-                r="9"
-                fill="currentColor"
-                initial={false}
-                whileInView={{ cx: xPositions, cy: yPositions, opacity: opacity.map((value) => value * 0.1) }}
-                viewport={{ amount: 0.1 }}
-                transition={transition}
-              />
-              <motion.circle
-                r="2.75"
-                fill="currentColor"
-                initial={false}
-                whileInView={{ cx: xPositions, cy: yPositions, opacity }}
-                viewport={{ amount: 0.1 }}
-                transition={transition}
-              />
+            <React.Fragment key={route.path}>
+              <circle r="11" fill="currentColor" opacity="0">
+                <animateMotion
+                  path={route.path}
+                  dur={duration}
+                  begin={begin}
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0;0.18;0.18;0"
+                  keyTimes="0;0.08;0.92;1"
+                  dur={duration}
+                  begin={begin}
+                  repeatCount="indefinite"
+                />
+              </circle>
+              <circle r="3.75" fill="currentColor" opacity="0">
+                <animateMotion
+                  path={route.path}
+                  dur={duration}
+                  begin={begin}
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0;1;1;0"
+                  keyTimes="0;0.08;0.92;1"
+                  dur={duration}
+                  begin={begin}
+                  repeatCount="indefinite"
+                />
+              </circle>
             </React.Fragment>
           );
         })}
