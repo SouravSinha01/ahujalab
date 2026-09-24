@@ -2,11 +2,11 @@
   "publications": [
     {
       "year": "2026",
-      "title": "OncoGen.AI: an integrated platform for automated genomic analysis and reporting in precision oncology",
-      "journal": "npj Precis Oncol. 2026",
-      "authors": "Shome R, Kumar S, Mohanty SK, Dholakia D, Sharma A, Solanki S, Sharma S, Chauhan S, Satija S, Diwan H, Panigrahi MK, Tayal J, Mehta A, Ahuja G.",
-      "doi": "10.1038/s41698-026-01578-9",
-      "tag": "Precision Oncology"
+      "title": "Scalable molecular representations enabled by multimodal fusion and sequence distillation",
+      "journal": "Nat Commun. 2026",
+      "authors": "Kumar S, Solanki S, Gupta M, Chauhan S, Mohanty SK, Satija S, Sharma AK, Duari S, Sharma A, Shome R, Gautam V, Arora S, Ali SY, Raza A, Sinha S, Mittal A, Sengupta D, Murugan NA, Ahuja G.",
+      "doi": "10.1038/s41467-026-77700-z",
+      "tag": "Molecular Representation"
     },
     {
       "year": "2026",
