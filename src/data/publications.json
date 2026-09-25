@@ -18,6 +18,14 @@
     },
     {
       "year": "2026",
+      "title": "OncoGen.AI: an integrated platform for automated genomic analysis and reporting in precision oncology",
+      "journal": "npj Precis Oncol. 2026",
+      "authors": "Shome R, Kumar S, Mohanty SK, Dholakia D, Sharma A, Solanki S, Sharma S, Chauhan S, Satija S, Diwan H, Panigrahi MK, Tayal J, Mehta A, Ahuja G.",
+      "doi": "10.1038/s41698-026-01578-9",
+      "tag": "Precision Oncology"
+    },
+    {
+      "year": "2026",
       "title": "Mechanism-Aware Deep Learning Maps the Redox Landscape of Cancer-Relevant Antioxidants",
       "journal": "Chemistry-Methods 2026, 6, e202500160",
       "authors": "Satija S, Solanki S, Ahuja G.",
